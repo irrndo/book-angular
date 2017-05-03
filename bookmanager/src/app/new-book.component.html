@@ -1,0 +1,57 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-align-justify"></i> {{book?.title}}
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input [ngModel]="book?.title" (ngModelChange)="book.title=$event" type="text" class="form-control"
+                   id="title" placeholder="Title...">
+          </div>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input [ngModel]="book?.author" (ngModelChange)="book.author=$event" type="text" class="form-control"
+                   id="author" placeholder="Author...">
+          </div>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="author">Rating</label>
+            <select [ngModel]="book?.rating" (ngModelChange)="book.rating=$event" type="text" class="form-control"
+                   id="rating">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea [ngModel]="book?.description" (ngModelChange)="book.description=$event" id="description" rows="9"
+                      class="form-control" placeholder="Description..."></textarea>
+          </div>
+        </div>
+      </div><!--/.row-->
+    </div>
+    <div class="card-footer">
+      <button (click)="saveBook()" type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+        Submit
+      </button>
+      <button (click)="goBack()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancel</button>
+    </div>
+  </div>
+</div>

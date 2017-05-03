@@ -1,0 +1,40 @@
+<div class="animated fadeIn">
+  <div class="card">
+    <div class="card-header">
+      <i class="fa fa-align-justify"></i> ID {{book?.id}}
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-sm-12">
+          <h6>Title</h6>
+          <p>{{book?.title}}</p>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <h6>Author</h6>
+          <p>{{book?.author}}</p>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <h6>Rating</h6>
+          <p>{{book?.rating}}/5</p>
+        </div>
+      </div><!--/.row-->
+      <div class="row">
+        <div class="col-sm-12">
+          <h6>Description</h6>
+          <p>{{book?.description}}</p>
+        </div>
+      </div><!--/.row-->
+    </div>
+    <div class="card-footer">
+      <button (click)="editBook()" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
+        Edit
+      </button>
+      <button (click)="gotoBooks()" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Return</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,34 @@
+<header class="app-header navbar">
+  <a class="navbar-brand" href="#"></a>
+
+</header>
+
+<div class="app-body">
+
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/books']"><i class="icon-book-open"></i> My library <span class="badge badge-info">NEW</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main content -->
+  <main class="main">
+
+    <br>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- /.conainer-fluid -->
+  </main>
+</div>
+
+<footer class="app-footer">
+  Book Manager 1.0 &copy; 2017.
+  <span class="float-right">Powered by TheBook Inc.
+    </span>
+</footer>
